@@ -1,112 +1,213 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vista de Productos</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Maison Riviere | Vista de Productos</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ink: "#111827",
+              sand: "#f8f3ec",
+              clay: "#c87c52",
+              olive: "#4f5d3a"
+            },
+            fontFamily: {
+              title: ["Playfair Display", "serif"],
+              body: ["Manrope", "sans-serif"]
+            },
+            boxShadow: {
+              soft: "0 14px 40px -20px rgba(17, 24, 39, 0.45)"
+            }
+          }
+        }
+      };
+    </script>
   </head>
-  <body class="min-h-screen bg-slate-100 text-slate-900">
-    <main class="min-h-screen px-4 py-8 sm:px-6 lg:px-10">
-      <section class="mx-auto flex max-w-7xl flex-col overflow-hidden rounded-3xl bg-white shadow-2xl lg:min-h-[85vh] lg:flex-row">
-        <div class="w-full bg-slate-900 px-6 py-8 text-white lg:w-1/2 lg:px-8">
-          <div class="mb-8 flex items-end justify-between gap-4 border-b border-white/10 pb-6">
-            <div>
-              <p class="text-sm uppercase tracking-[0.3em] text-amber-300">Producto destacado</p>
-              <h1 class="mt-2 text-3xl font-bold sm:text-4xl">Chaqueta vaquera</h1>
-            </div>
-            <span class="rounded-full bg-white/10 px-4 py-2 text-sm font-medium">Denim premium</span>
-          </div>
 
-          <article class="overflow-hidden rounded-3xl bg-white/5 ring-1 ring-white/10">
-            <img
-              src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1200&q=80"
-              alt="Chaqueta vaquera azul"
-              class="h-[28rem] w-full object-cover sm:h-[34rem] lg:h-[42rem]"
+  <body class="bg-sand text-ink font-body antialiased">
+    <div
+      class="pointer-events-none fixed inset-0 -z-10 bg-[radial-gradient(circle_at_20%_15%,rgba(200,124,82,0.18),transparent_40%),radial-gradient(circle_at_80%_10%,rgba(79,93,58,0.2),transparent_35%),linear-gradient(to_bottom,#fff9f2,#f8f3ec)]"
+      aria-hidden="true"
+    ></div>
+
+    <header class="sticky top-0 z-40 border-b border-amber-950/10 bg-sand/90 backdrop-blur">
+      <div class="mx-auto flex w-full max-w-7xl items-center gap-3 px-4 py-3 sm:px-6 lg:px-8">
+        <a href="index.html" class="shrink-0" aria-label="Inicio Maison Riviere">
+          <span class="font-title text-xl tracking-wide sm:text-2xl">Maison Riviere</span>
+          <span class="block text-[10px] uppercase tracking-[0.32em] text-olive">Paris, France</span>
+        </a>
+
+        <form class="mx-auto w-full max-w-xl" role="search" aria-label="Buscar productos">
+          <label for="site-search" class="sr-only">Buscar</label>
+          <div class="relative">
+            <input
+              id="site-search"
+              name="q"
+              type="search"
+              placeholder="Buscar prendas, colecciones o tendencias"
+              class="w-full rounded-full border border-amber-900/20 bg-white/85 px-5 py-2.5 text-sm outline-none ring-0 transition focus:border-clay focus:bg-white"
             />
-            <div class="space-y-3 p-5 sm:p-6">
-              <h2 class="text-2xl font-semibold">Chaqueta vaquera</h2>
-              <p class="text-base leading-7 text-slate-300">
-                Corte recto con acabado lavado, pensada para un estilo urbano versatil y facil de combinar.
-              </p>
-              <p class="text-lg font-semibold text-amber-300">64,90 EUR</p>
-            </div>
-          </article>
-        </div>
+            <button
+              type="submit"
+              class="absolute right-2 top-1/2 -translate-y-1/2 rounded-full bg-ink px-3 py-1.5 text-xs font-semibold uppercase tracking-wider text-white transition hover:bg-olive"
+            >
+              Buscar
+            </button>
+          </div>
+        </form>
 
-        <aside class="flex w-full items-center bg-white px-6 py-8 lg:w-1/2 lg:px-10">
-          <div class="mx-auto w-full max-w-xl">
-            <p class="text-sm font-semibold uppercase tracking-[0.3em] text-slate-500">Detalle del producto</p>
-            <h2 class="mt-4 text-4xl font-bold tracking-tight text-slate-900">Chaqueta vaquera</h2>
-            <p class="mt-4 text-base leading-7 text-slate-600">
-              Prenda versatil de estilo casual, confeccionada en denim de peso medio para uso diario.
+        <nav aria-label="Cuenta de usuario" class="shrink-0">
+          <a
+            href="#"
+            class="inline-flex items-center gap-2 rounded-full border border-ink/20 bg-white px-3 py-2 text-sm font-semibold transition hover:border-clay hover:text-clay"
+          >
+            <span aria-hidden="true">&#9679;</span>
+            Mi cuenta
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="mx-auto w-full max-w-7xl px-4 pb-12 pt-8 sm:px-6 lg:px-8 lg:pt-10">
+      <section class="overflow-hidden rounded-3xl border border-amber-950/10 bg-white/80 shadow-soft backdrop-blur">
+        <div class="grid gap-0 lg:grid-cols-2">
+          <article class="bg-ink px-6 py-8 text-white sm:px-8 lg:px-10 lg:py-10">
+            <div class="mb-6 flex flex-wrap items-end justify-between gap-3 border-b border-white/15 pb-6">
+              <div>
+                <p class="text-xs font-semibold uppercase tracking-[0.3em] text-amber-300">Producto destacado</p>
+                <h1 class="mt-2 font-title text-4xl sm:text-5xl">Chaqueta vaquera</h1>
+              </div>
+              <span class="rounded-full bg-white/10 px-4 py-2 text-sm font-semibold">Denim premium</span>
+            </div>
+
+            <figure class="overflow-hidden rounded-2xl ring-1 ring-white/15">
+              <img
+                src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1200&q=80"
+                alt="Chaqueta vaquera azul"
+                class="h-[22rem] w-full object-cover sm:h-[28rem] lg:h-[34rem]"
+                loading="eager"
+              />
+              <figcaption class="bg-white/10 px-4 py-3 text-sm text-white/90">Look editorial Paris Capsule 2026</figcaption>
+            </figure>
+          </article>
+
+          <aside class="px-6 py-8 sm:px-8 lg:px-10 lg:py-10">
+            <p class="text-xs font-semibold uppercase tracking-[0.3em] text-olive">Detalle del producto</p>
+            <h2 class="mt-3 font-title text-4xl leading-tight text-ink">Chaqueta vaquera</h2>
+            <p class="mt-4 text-sm leading-7 text-ink/75 sm:text-base">
+              Prenda versatil de estilo casual, confeccionada en denim de peso medio para uso diario y combinaciones de temporada.
             </p>
 
-            <div class="mt-8 grid gap-4 sm:grid-cols-2">
-              <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
-                <p class="text-sm font-medium text-slate-500">Codigo / Referencia</p>
-                <p class="mt-2 text-lg font-semibold text-slate-900">DV-2048-AZ</p>
+            <div class="mt-7 grid gap-4 sm:grid-cols-2">
+              <div class="rounded-2xl border border-amber-950/10 bg-sand p-4">
+                <p class="text-xs font-semibold uppercase tracking-[0.16em] text-ink/60">Codigo</p>
+                <p class="mt-2 text-lg font-semibold">DV-2048-AZ</p>
               </div>
-              <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
-                <p class="text-sm font-medium text-slate-500">Talla</p>
-                <p class="mt-2 text-lg font-semibold text-slate-900">M</p>
+              <div class="rounded-2xl border border-amber-950/10 bg-sand p-4">
+                <p class="text-xs font-semibold uppercase tracking-[0.16em] text-ink/60">Talla</p>
+                <p class="mt-2 text-lg font-semibold">M</p>
               </div>
-              <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4 sm:col-span-2">
-                <p class="text-sm font-medium text-slate-500">Precio</p>
-                <p class="mt-2 text-3xl font-bold text-slate-900">64,90 EUR</p>
+              <div class="rounded-2xl border border-amber-950/10 bg-sand p-4 sm:col-span-2">
+                <p class="text-xs font-semibold uppercase tracking-[0.16em] text-ink/60">Precio</p>
+                <p class="mt-2 text-3xl font-semibold">64,90 EUR</p>
               </div>
             </div>
 
-            <section class="mt-8 space-y-5 rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+            <section class="mt-7 space-y-5 rounded-3xl border border-amber-950/10 bg-white p-6">
               <div>
-                <h3 class="text-lg font-semibold text-slate-900">Materiales</h3>
-                <p class="mt-2 text-base leading-7 text-slate-600">
-                  Elaborada con 98% algodon y 2% elastano, esta chaqueta combina resistencia, comodidad y una ligera elasticidad
-                  para facilitar el movimiento. El acabado denim de peso medio mejora la durabilidad sin perder suavidad al tacto.
+                <h3 class="font-title text-2xl">Materiales</h3>
+                <p class="mt-2 text-sm leading-7 text-ink/75 sm:text-base">
+                  Elaborada con 98% algodon y 2% elastano, combina resistencia, comodidad y elasticidad para facilitar el movimiento.
                 </p>
               </div>
 
               <div>
-                <h3 class="text-lg font-semibold text-slate-900">Uso recomendado</h3>
-                <p class="mt-2 text-base leading-7 text-slate-600">
-                  Recomendada para looks casuales de entretiempo, salidas urbanas y combinaciones con camisetas basicas, vestidos o
-                  pantalones rectos. Ideal para uso diario gracias a su estructura ligera y versatil.
+                <h3 class="font-title text-2xl">Uso recomendado</h3>
+                <p class="mt-2 text-sm leading-7 text-ink/75 sm:text-base">
+                  Ideal para looks casuales de entretiempo, salidas urbanas y combinaciones con camisetas basicas o pantalones rectos.
                 </p>
-                <div class="mt-4 rounded-2xl bg-slate-50 p-4">
-                  <p class="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">Posibles escenarios</p>
-                  <ul class="mt-3 space-y-2 text-base leading-7 text-slate-600">
-                    <li>Jornadas informales de oficina con un look comodo y pulido.</li>
-                    <li>Paseos de fin de semana o salidas por la ciudad en temporadas frescas.</li>
-                    <li>Viajes cortos donde conviene una capa ligera y facil de combinar.</li>
-                    <li>Encuentros casuales, cenas informales o actividades al aire libre.</li>
-                  </ul>
-                </div>
+                <ul class="mt-4 space-y-2 rounded-2xl bg-sand p-4 text-sm leading-6 text-ink/80">
+                  <li>Jornadas informales con un look comodo y pulido.</li>
+                  <li>Paseos de fin de semana en temporadas frescas.</li>
+                  <li>Viajes cortos con una capa ligera y versatil.</li>
+                </ul>
               </div>
             </section>
 
-            <form class="mt-8 space-y-6 rounded-3xl border border-slate-200 bg-slate-50 p-6">
-              <div>
-                <label for="cantidad" class="mb-2 block text-sm font-medium text-slate-700">Selector de cantidad</label>
+            <form class="mt-7 rounded-3xl border border-amber-950/10 bg-sand p-6">
+              <label for="cantidad" class="mb-2 block text-sm font-semibold text-ink/80">Selector de cantidad</label>
+              <div class="flex flex-col gap-3 sm:flex-row">
                 <input
                   id="cantidad"
                   name="cantidad"
                   type="number"
                   min="1"
                   value="1"
-                  class="w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-lg text-slate-900 outline-none transition focus:border-slate-500 focus:ring-2 focus:ring-slate-200"
+                  class="w-full rounded-full border border-amber-900/20 bg-white px-5 py-3 text-base outline-none transition focus:border-clay"
                 />
+                <button
+                  type="button"
+                  class="w-full rounded-full bg-ink px-6 py-3 text-sm font-semibold uppercase tracking-wider text-white transition hover:bg-olive sm:w-auto"
+                >
+                  Agregar al carrito
+                </button>
               </div>
-
-              <button
-                type="button"
-                class="w-full rounded-2xl bg-slate-900 px-6 py-4 text-base font-semibold text-white transition hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2"
-              >
-                Agregar al carrito
-              </button>
             </form>
-          </div>
-        </aside>
+          </aside>
+        </div>
       </section>
     </main>
+
+    <footer class="border-t border-amber-950/10 bg-white/70">
+      <div class="mx-auto grid w-full max-w-7xl gap-8 px-4 py-10 sm:px-6 md:grid-cols-2 lg:grid-cols-4 lg:px-8">
+        <section>
+          <h2 class="font-title text-xl">Maison Riviere</h2>
+          <p class="mt-2 text-sm text-ink/75">Moda con alma parisina para el dia a dia contemporaneo.</p>
+        </section>
+
+        <section aria-labelledby="cat-title">
+          <h3 id="cat-title" class="text-sm font-semibold uppercase tracking-wider text-olive">Categorias</h3>
+          <ul class="mt-3 space-y-2 text-sm">
+            <li><a href="#" class="hover:text-clay">Calzado</a></li>
+            <li><a href="#" class="hover:text-clay">Camisas</a></li>
+            <li><a href="#" class="hover:text-clay">Pantalones</a></li>
+            <li><a href="#" class="hover:text-clay">Accesorios</a></li>
+          </ul>
+        </section>
+
+        <section aria-labelledby="legal-title">
+          <h3 id="legal-title" class="text-sm font-semibold uppercase tracking-wider text-olive">Legal</h3>
+          <ul class="mt-3 space-y-2 text-sm">
+            <li><a href="#" class="hover:text-clay">Terminos y condiciones</a></li>
+            <li><a href="#" class="hover:text-clay">Politica de privacidad</a></li>
+            <li><a href="#" class="hover:text-clay">Sobre la marca</a></li>
+          </ul>
+        </section>
+
+        <section aria-labelledby="contact-title">
+          <h3 id="contact-title" class="text-sm font-semibold uppercase tracking-wider text-olive">Contacto</h3>
+          <ul class="mt-3 space-y-2 text-sm">
+            <li>Atelier: 22 Rue de la Paix, Paris</li>
+            <li>Email: contact@maisonriviere.com</li>
+            <li>Tel: +33 1 44 00 11 22</li>
+          </ul>
+        </section>
+      </div>
+      <div class="border-t border-amber-950/10 px-4 py-4 text-center text-xs text-ink/70 sm:px-6 lg:px-8">
+        © 2026 Maison Riviere. Todos los derechos reservados.
+      </div>
+    </footer>
   </body>
 </html>
