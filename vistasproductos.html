@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vista de Productos</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="min-h-screen bg-slate-100 text-slate-900">
+    <main class="min-h-screen px-4 py-8 sm:px-6 lg:px-10">
+      <section class="mx-auto flex max-w-7xl flex-col overflow-hidden rounded-3xl bg-white shadow-2xl lg:min-h-[85vh] lg:flex-row">
+        <div class="w-full bg-slate-900 px-6 py-8 text-white lg:w-1/2 lg:px-8">
+          <div class="mb-8 flex items-end justify-between gap-4 border-b border-white/10 pb-6">
+            <div>
+              <p class="text-sm uppercase tracking-[0.3em] text-amber-300">Producto destacado</p>
+              <h1 class="mt-2 text-3xl font-bold sm:text-4xl">Chaqueta vaquera</h1>
+            </div>
+            <span class="rounded-full bg-white/10 px-4 py-2 text-sm font-medium">Denim premium</span>
+          </div>
+
+          <article class="overflow-hidden rounded-3xl bg-white/5 ring-1 ring-white/10">
+            <img
+              src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1200&q=80"
+              alt="Chaqueta vaquera azul"
+              class="h-[28rem] w-full object-cover sm:h-[34rem] lg:h-[42rem]"
+            />
+            <div class="space-y-3 p-5 sm:p-6">
+              <h2 class="text-2xl font-semibold">Chaqueta vaquera</h2>
+              <p class="text-base leading-7 text-slate-300">
+                Corte recto con acabado lavado, pensada para un estilo urbano versatil y facil de combinar.
+              </p>
+              <p class="text-lg font-semibold text-amber-300">64,90 EUR</p>
+            </div>
+          </article>
+        </div>
+
+        <aside class="flex w-full items-center bg-white px-6 py-8 lg:w-1/2 lg:px-10">
+          <div class="mx-auto w-full max-w-xl">
+            <p class="text-sm font-semibold uppercase tracking-[0.3em] text-slate-500">Detalle del producto</p>
+            <h2 class="mt-4 text-4xl font-bold tracking-tight text-slate-900">Chaqueta vaquera</h2>
+            <p class="mt-4 text-base leading-7 text-slate-600">
+              Prenda versatil de estilo casual, confeccionada en denim de peso medio para uso diario.
+            </p>
+
+            <div class="mt-8 grid gap-4 sm:grid-cols-2">
+              <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                <p class="text-sm font-medium text-slate-500">Codigo / Referencia</p>
+                <p class="mt-2 text-lg font-semibold text-slate-900">DV-2048-AZ</p>
+              </div>
+              <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                <p class="text-sm font-medium text-slate-500">Talla</p>
+                <p class="mt-2 text-lg font-semibold text-slate-900">M</p>
+              </div>
+              <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4 sm:col-span-2">
+                <p class="text-sm font-medium text-slate-500">Precio</p>
+                <p class="mt-2 text-3xl font-bold text-slate-900">64,90 EUR</p>
+              </div>
+            </div>
+
+            <section class="mt-8 space-y-5 rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+              <div>
+                <h3 class="text-lg font-semibold text-slate-900">Materiales</h3>
+                <p class="mt-2 text-base leading-7 text-slate-600">
+                  Elaborada con 98% algodon y 2% elastano, esta chaqueta combina resistencia, comodidad y una ligera elasticidad
+                  para facilitar el movimiento. El acabado denim de peso medio mejora la durabilidad sin perder suavidad al tacto.
+                </p>
+              </div>
+
+              <div>
+                <h3 class="text-lg font-semibold text-slate-900">Uso recomendado</h3>
+                <p class="mt-2 text-base leading-7 text-slate-600">
+                  Recomendada para looks casuales de entretiempo, salidas urbanas y combinaciones con camisetas basicas, vestidos o
+                  pantalones rectos. Ideal para uso diario gracias a su estructura ligera y versatil.
+                </p>
+                <div class="mt-4 rounded-2xl bg-slate-50 p-4">
+                  <p class="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">Posibles escenarios</p>
+                  <ul class="mt-3 space-y-2 text-base leading-7 text-slate-600">
+                    <li>Jornadas informales de oficina con un look comodo y pulido.</li>
+                    <li>Paseos de fin de semana o salidas por la ciudad en temporadas frescas.</li>
+                    <li>Viajes cortos donde conviene una capa ligera y facil de combinar.</li>
+                    <li>Encuentros casuales, cenas informales o actividades al aire libre.</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+            <form class="mt-8 space-y-6 rounded-3xl border border-slate-200 bg-slate-50 p-6">
+              <div>
+                <label for="cantidad" class="mb-2 block text-sm font-medium text-slate-700">Selector de cantidad</label>
+                <input
+                  id="cantidad"
+                  name="cantidad"
+                  type="number"
+                  min="1"
+                  value="1"
+                  class="w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-lg text-slate-900 outline-none transition focus:border-slate-500 focus:ring-2 focus:ring-slate-200"
+                />
+              </div>
+
+              <button
+                type="button"
+                class="w-full rounded-2xl bg-slate-900 px-6 py-4 text-base font-semibold text-white transition hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2"
+              >
+                Agregar al carrito
+              </button>
+            </form>
+          </div>
+        </aside>
+      </section>
+    </main>
+  </body>
+</html>
