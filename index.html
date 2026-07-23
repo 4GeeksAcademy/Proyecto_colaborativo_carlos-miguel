@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maison Riviere | Moda Francesa</title>
+    <meta
+      name="description"
+      content="Descubre Maison Riviere, marca de ropa con sede en Francia. Explora nuevos lanzamientos, mas vendidos y campanas especiales de moda contemporanea."
+    />
+    <meta
+      name="keywords"
+      content="moda francesa, ropa premium, nuevos lanzamientos, mas vendidos, calzado, camisas, pantalones, accesorios"
+    />
+    <meta name="author" content="Maison Riviere" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.maisonriviere.com/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Maison Riviere | Moda Francesa" />
+    <meta
+      property="og:description"
+      content="Nuevos lanzamientos, mas vendidos y campanas exclusivas de una marca de ropa con sede en Francia."
+    />
+    <meta property="og:url" content="https://www.maisonriviere.com/" />
+    <meta
+      property="og:image"
+      content="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=80"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Maison Riviere | Moda Francesa" />
+    <meta
+      name="twitter:description"
+      content="Explora las ultimas colecciones y piezas iconicas de Maison Riviere."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ink: "#111827",
+              sand: "#f8f3ec",
+              clay: "#c87c52",
+              olive: "#4f5d3a"
+            },
+            fontFamily: {
+              title: ["Playfair Display", "serif"],
+              body: ["Manrope", "sans-serif"]
+            },
+            boxShadow: {
+              soft: "0 14px 40px -20px rgba(17, 24, 39, 0.45)"
+            }
+          }
+        }
+      };
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Maison Riviere",
+        "url": "https://www.maisonriviere.com/",
+        "logo": "https://www.maisonriviere.com/logo.png",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "FR",
+          "addressLocality": "Paris"
+        },
+        "sameAs": [
+          "https://www.instagram.com/",
+          "https://www.pinterest.com/"
+        ]
+      }
+    </script>
+  </head>
+
+  <body class="bg-sand text-ink font-body antialiased">
+    <div
+      class="pointer-events-none fixed inset-0 -z-10 bg-[radial-gradient(circle_at_20%_15%,rgba(200,124,82,0.18),transparent_40%),radial-gradient(circle_at_80%_10%,rgba(79,93,58,0.2),transparent_35%),linear-gradient(to_bottom,#fff9f2,#f8f3ec)]"
+      aria-hidden="true"
+    ></div>
+
+    <!-- Navbar reutilizable para todas las vistas -->
+    <header class="sticky top-0 z-40 border-b border-amber-950/10 bg-sand/90 backdrop-blur">
+      <div class="mx-auto flex w-full max-w-7xl items-center gap-3 px-4 py-3 sm:px-6 lg:px-8">
+        <a href="#" class="shrink-0" aria-label="Inicio Maison Riviere">
+          <span class="font-title text-xl tracking-wide sm:text-2xl">Maison Riviere</span>
+          <span class="block text-[10px] uppercase tracking-[0.32em] text-olive">Paris, France</span>
+        </a>
+
+        <form class="mx-auto w-full max-w-xl" role="search" aria-label="Buscar productos">
+          <label for="site-search" class="sr-only">Buscar</label>
+          <div class="relative">
+            <input
+              id="site-search"
+              name="q"
+              type="search"
+              placeholder="Buscar prendas, colecciones o tendencias"
+              class="w-full rounded-full border border-amber-900/20 bg-white/85 px-5 py-2.5 text-sm outline-none ring-0 transition focus:border-clay focus:bg-white"
+            />
+            <button
+              type="submit"
+              class="absolute right-2 top-1/2 -translate-y-1/2 rounded-full bg-ink px-3 py-1.5 text-xs font-semibold uppercase tracking-wider text-white transition hover:bg-olive"
+            >
+              Buscar
+            </button>
+          </div>
+        </form>
+
+        <nav aria-label="Cuenta de usuario" class="shrink-0">
+          <a
+            href="#"
+            class="inline-flex items-center gap-2 rounded-full border border-ink/20 bg-white px-3 py-2 text-sm font-semibold transition hover:border-clay hover:text-clay"
+          >
+            <span aria-hidden="true">&#9679;</span>
+            Mi cuenta
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="mx-auto grid w-full max-w-7xl gap-8 px-4 pb-12 pt-8 sm:px-6 lg:grid-cols-2 lg:px-8 lg:pt-12">
+        <article class="space-y-6 self-center">
+          <p class="inline-flex rounded-full bg-olive/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.25em] text-olive">
+            Campana destacada
+          </p>
+          <h1 class="font-title text-4xl leading-tight sm:text-5xl lg:text-6xl">
+            Esencia Francesa,
+            <span class="text-clay">siluetas para hoy</span>
+          </h1>
+          <p class="max-w-xl text-sm text-ink/80 sm:text-base">
+            Descubre la nueva narrativa de Maison Riviere: tejidos premium, lineas depuradas y una seleccion de piezas especiales inspiradas en Paris.
+          </p>
+          <div class="flex flex-wrap gap-3">
+            <a
+              href="#nuevos"
+              class="rounded-full bg-ink px-6 py-3 text-sm font-semibold text-white transition hover:bg-olive"
+            >
+              Ver nuevos lanzamientos
+            </a>
+            <a
+              href="#mas-vendidos"
+              class="rounded-full border border-ink/25 px-6 py-3 text-sm font-semibold transition hover:border-clay hover:text-clay"
+            >
+              Explorar mas vendidos
+            </a>
+          </div>
+        </article>
+
+        <figure class="relative overflow-hidden rounded-3xl shadow-soft">
+          <img
+            src="https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=1400&q=80"
+            alt="Modelo con nueva coleccion Maison Riviere"
+            class="h-[400px] w-full object-cover sm:h-[500px]"
+            loading="eager"
+          />
+          <figcaption class="absolute bottom-4 left-4 rounded-xl bg-white/85 px-4 py-3 text-sm backdrop-blur">
+            Edicion Otono 2026 - Atelier Lumiere
+          </figcaption>
+        </figure>
+      </section>
+
+      <section id="nuevos" class="mx-auto w-full max-w-7xl px-4 pb-10 sm:px-6 lg:px-8">
+        <div class="mb-5 flex items-end justify-between gap-3">
+          <h2 class="font-title text-2xl sm:text-3xl">Nuevos lanzamientos</h2>
+          <a href="#" class="text-sm font-semibold text-olive hover:text-clay">Ver todo</a>
+        </div>
+
+        <div class="flex snap-x snap-mandatory gap-4 overflow-x-auto pb-3">
+          <article class="min-w-[230px] snap-start overflow-hidden rounded-2xl bg-white shadow-soft sm:min-w-[260px]">
+            <img
+              src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=900&q=80"
+              alt="Chaqueta Beaulieu"
+              class="h-64 w-full object-cover"
+              loading="lazy"
+            />
+            <div class="p-4">
+              <h3 class="font-semibold">Chaqueta Beaulieu</h3>
+              <p class="mt-1 text-sm text-ink/70">Lino tecnico</p>
+              <p class="mt-3 font-semibold">€189</p>
+            </div>
+          </article>
+
+          <article class="min-w-[230px] snap-start overflow-hidden rounded-2xl bg-white shadow-soft sm:min-w-[260px]">
+            <img
+              src="https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=900&q=80"
+              alt="Pantalon Marais"
+              class="h-64 w-full object-cover"
+              loading="lazy"
+            />
+            <div class="p-4">
+              <h3 class="font-semibold">Pantalon Marais</h3>
+              <p class="mt-1 text-sm text-ink/70">Corte relajado</p>
+              <p class="mt-3 font-semibold">€119</p>
+            </div>
+          </article>
+
+          <article class="min-w-[230px] snap-start overflow-hidden rounded-2xl bg-white shadow-soft sm:min-w-[260px]">
+            <img
+              src="https://images.unsplash.com/photo-1614676471928-2ed0ad1061a4?auto=format&fit=crop&w=900&q=80"
+              alt="Bolso Rivoli"
+              class="h-64 w-full object-cover"
+              loading="lazy"
+            />
+            <div class="p-4">
+              <h3 class="font-semibold">Bolso Rivoli</h3>
+              <p class="mt-1 text-sm text-ink/70">Cuero vegetal</p>
+              <p class="mt-3 font-semibold">€159</p>
+            </div>
+          </article>
+
+          <article class="min-w-[230px] snap-start overflow-hidden rounded-2xl bg-white shadow-soft sm:min-w-[260px]">
+            <img
+              src="https://images.unsplash.com/photo-1520006403909-838d6b92c22e?auto=format&fit=crop&w=900&q=80"
+              alt="Camisa Seine"
+              class="h-64 w-full object-cover"
+              loading="lazy"
+            />
+            <div class="p-4">
+              <h3 class="font-semibold">Camisa Seine</h3>
+              <p class="mt-1 text-sm text-ink/70">Algodon organico</p>
+              <p class="mt-3 font-semibold">€94</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="mas-vendidos" class="mx-auto w-full max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">
+        <div class="mb-5 flex items-end justify-between gap-3">
+          <h2 class="font-title text-2xl sm:text-3xl">Mas vendidos</h2>
+          <a href="#" class="text-sm font-semibold text-olive hover:text-clay">Ver todo</a>
+        </div>
+
+        <div class="flex snap-x snap-mandatory gap-4 overflow-x-auto pb-3">
+          <article class="min-w-[230px] snap-start overflow-hidden rounded-2xl bg-white shadow-soft sm:min-w-[260px]">
+            <img
+              src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=900&q=80"
+              alt="Abrigo Montmartre"
+              class="h-64 w-full object-cover"
+              loading="lazy"
+            />
+            <div class="p-4">
+              <h3 class="font-semibold">Abrigo Montmartre</h3>
+              <p class="mt-1 text-sm text-ink/70">Lana premium</p>
+              <p class="mt-3 font-semibold">€249</p>
+            </div>
+          </article>
+
+          <article class="min-w-[230px] snap-start overflow-hidden rounded-2xl bg-white shadow-soft sm:min-w-[260px]">
+            <img
+              src="https://images.unsplash.com/photo-1516257984-b1b4d707412e?auto=format&fit=crop&w=900&q=80"
+              alt="Sneakers Bastille"
+              class="h-64 w-full object-cover"
+              loading="lazy"
+            />
+            <div class="p-4">
+              <h3 class="font-semibold">Sneakers Bastille</h3>
+              <p class="mt-1 text-sm text-ink/70">Edicion urbana</p>
+              <p class="mt-3 font-semibold">€139</p>
+            </div>
+          </article>
+
+          <article class="min-w-[230px] snap-start overflow-hidden rounded-2xl bg-white shadow-soft sm:min-w-[260px]">
+            <img
+              src="https://images.unsplash.com/photo-1475180098004-ca77a66827be?auto=format&fit=crop&w=900&q=80"
+              alt="Vestido Loire"
+              class="h-64 w-full object-cover"
+              loading="lazy"
+            />
+            <div class="p-4">
+              <h3 class="font-semibold">Vestido Loire</h3>
+              <p class="mt-1 text-sm text-ink/70">Linea atemporal</p>
+              <p class="mt-3 font-semibold">€169</p>
+            </div>
+          </article>
+
+          <article class="min-w-[230px] snap-start overflow-hidden rounded-2xl bg-white shadow-soft sm:min-w-[260px]">
+            <img
+              src="https://images.unsplash.com/photo-1465406325903-9d93ee82f613?auto=format&fit=crop&w=900&q=80"
+              alt="Cinturon Opera"
+              class="h-64 w-full object-cover"
+              loading="lazy"
+            />
+            <div class="p-4">
+              <h3 class="font-semibold">Cinturon Opera</h3>
+              <p class="mt-1 text-sm text-ink/70">Piel italiana</p>
+              <p class="mt-3 font-semibold">€79</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer reutilizable para todas las vistas -->
+    <footer class="border-t border-amber-950/10 bg-white/70">
+      <div class="mx-auto grid w-full max-w-7xl gap-8 px-4 py-10 sm:px-6 md:grid-cols-2 lg:grid-cols-4 lg:px-8">
+        <section>
+          <h2 class="font-title text-xl">Maison Riviere</h2>
+          <p class="mt-2 text-sm text-ink/75">Moda con alma parisina para el dia a dia contemporaneo.</p>
+        </section>
+
+        <section aria-labelledby="cat-title">
+          <h3 id="cat-title" class="text-sm font-semibold uppercase tracking-wider text-olive">Categorias</h3>
+          <ul class="mt-3 space-y-2 text-sm">
+            <li><a href="#" class="hover:text-clay">Calzado</a></li>
+            <li><a href="#" class="hover:text-clay">Camisas</a></li>
+            <li><a href="#" class="hover:text-clay">Pantalones</a></li>
+            <li><a href="#" class="hover:text-clay">Accesorios</a></li>
+          </ul>
+        </section>
+
+        <section aria-labelledby="legal-title">
+          <h3 id="legal-title" class="text-sm font-semibold uppercase tracking-wider text-olive">Legal</h3>
+          <ul class="mt-3 space-y-2 text-sm">
+            <li><a href="#" class="hover:text-clay">Terminos y condiciones</a></li>
+            <li><a href="#" class="hover:text-clay">Politica de privacidad</a></li>
+            <li><a href="#" class="hover:text-clay">Sobre la marca</a></li>
+          </ul>
+        </section>
+
+        <section aria-labelledby="contact-title">
+          <h3 id="contact-title" class="text-sm font-semibold uppercase tracking-wider text-olive">Contacto</h3>
+          <ul class="mt-3 space-y-2 text-sm">
+            <li>Atelier: 22 Rue de la Paix, Paris</li>
+            <li>Email: contact@maisonriviere.com</li>
+            <li>Tel: +33 1 44 00 11 22</li>
+          </ul>
+        </section>
+      </div>
+      <div class="border-t border-amber-950/10 px-4 py-4 text-center text-xs text-ink/70 sm:px-6 lg:px-8">
+        © 2026 Maison Riviere. Todos los derechos reservados.
+      </div>
+    </footer>
+  </body>
+</html>
