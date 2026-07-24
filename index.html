@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO basico -->
     <title>Maison Riviere | Moda Francesa</title>
     <meta
       name="description"
@@ -14,9 +16,13 @@
     />
     <meta name="author" content="Maison Riviere" />
     <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#f8f3ec" />
     <link rel="canonical" href="https://www.maisonriviere.com/" />
 
+    <!-- Open Graph -->
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Maison Riviere" />
+    <meta property="og:locale" content="es_ES" />
     <meta property="og:title" content="Maison Riviere | Moda Francesa" />
     <meta
       property="og:description"
@@ -27,11 +33,17 @@
       property="og:image"
       content="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=80"
     />
+
+    <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Maison Riviere | Moda Francesa" />
     <meta
       name="twitter:description"
       content="Explora las ultimas colecciones y piezas iconicas de Maison Riviere."
+    />
+    <meta
+      name="twitter:image"
+      content="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=80"
     />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -67,18 +79,52 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Maison Riviere",
-        "url": "https://www.maisonriviere.com/",
-        "logo": "https://www.maisonriviere.com/logo.png",
-        "address": {
-          "@type": "PostalAddress",
-          "addressCountry": "FR",
-          "addressLocality": "Paris"
-        },
-        "sameAs": [
-          "https://www.instagram.com/",
-          "https://www.pinterest.com/"
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.maisonriviere.com/#organization",
+            "name": "Maison Riviere",
+            "url": "https://www.maisonriviere.com/",
+            "logo": "https://www.maisonriviere.com/logo.png",
+            "address": {
+              "@type": "PostalAddress",
+              "addressCountry": "FR",
+              "addressLocality": "Paris"
+            },
+            "sameAs": [
+              "https://www.instagram.com/",
+              "https://www.pinterest.com/"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.maisonriviere.com/#website",
+            "url": "https://www.maisonriviere.com/",
+            "name": "Maison Riviere",
+            "inLanguage": "es",
+            "publisher": {
+              "@id": "https://www.maisonriviere.com/#organization"
+            },
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://www.maisonriviere.com/?q={search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.maisonriviere.com/#webpage",
+            "url": "https://www.maisonriviere.com/",
+            "name": "Maison Riviere | Moda Francesa",
+            "isPartOf": {
+              "@id": "https://www.maisonriviere.com/#website"
+            },
+            "about": {
+              "@id": "https://www.maisonriviere.com/#organization"
+            },
+            "description": "Nuevos lanzamientos, mas vendidos y campanas especiales de moda contemporanea.",
+            "inLanguage": "es"
+          }
         ]
       }
     </script>
