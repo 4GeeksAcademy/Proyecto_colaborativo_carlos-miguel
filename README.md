@@ -1,5 +1,37 @@
 # HTML Hello
 
+## Resultados de PageSpeed (Lighthouse)
+
+Evaluacion realizada sobre la version publicada del proyecto (modo mobile).
+
+### Puntajes generales
+
+| Categoria | Puntaje |
+| --- | --- |
+| Performance | 98 |
+| Accessibility | 100 |
+| Best Practices | 96 |
+| SEO | 66 |
+
+### Metricas principales
+
+| Metrica | Resultado |
+| --- | --- |
+| First Contentful Paint (FCP) | 0.9 s |
+| Largest Contentful Paint (LCP) | 1.0 s |
+| Total Blocking Time (TBT) | 0 ms |
+| Cumulative Layout Shift (CLS) | 0.001 |
+| Speed Index | 0.9 s |
+
+### Captura del reporte
+
+![Reporte de Lighthouse y PageSpeed](pagespeed-result.png)
+
+### Observaciones
+
+- El rendimiento general es alto y la experiencia de carga es rapida.
+- El principal punto de mejora actual es SEO (66), por lo que conviene priorizar optimizaciones tecnicas y de metadatos para buscadores.
+
 The most basic boilerplate for any 4Geeks Academy student, start your very first website from scratch.
 
 > There is a video tutorial on [how to use this template to create your very first website here](https://youtu.be/dfbDCMu_p-0).
