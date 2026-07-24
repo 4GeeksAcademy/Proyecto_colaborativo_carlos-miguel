@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO basico -->
     <title>Catalogo | Maison Riviere - Moda Francesa</title>
     <meta
       name="description"
@@ -14,9 +16,13 @@
     />
     <meta name="author" content="Maison Riviere" />
     <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#f8f3ec" />
     <link rel="canonical" href="https://www.maisonriviere.com/catalogo" />
 
+    <!-- Open Graph -->
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Maison Riviere" />
+    <meta property="og:locale" content="es_ES" />
     <meta property="og:title" content="Catalogo Maison Riviere" />
     <meta
       property="og:description"
@@ -27,11 +33,17 @@
       property="og:image"
       content="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=80"
     />
+
+    <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Catalogo Maison Riviere" />
     <meta
       name="twitter:description"
       content="20 productos de referencia de moda francesa en una vista de catalogo responsive."
+    />
+    <meta
+      name="twitter:image"
+      content="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=80"
     />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -67,20 +79,104 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "CollectionPage",
-        "name": "Catalogo Maison Riviere",
-        "description": "Catalogo de ropa premium de Maison Riviere con sede en Francia.",
-        "url": "https://www.maisonriviere.com/catalogo",
-        "inLanguage": "es",
-        "publisher": {
-          "@type": "Organization",
-          "name": "Maison Riviere",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Paris",
-            "addressCountry": "FR"
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.maisonriviere.com/#organization",
+            "name": "Maison Riviere",
+            "url": "https://www.maisonriviere.com/",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Paris",
+              "addressCountry": "FR"
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.maisonriviere.com/#website",
+            "url": "https://www.maisonriviere.com/",
+            "name": "Maison Riviere",
+            "inLanguage": "es",
+            "publisher": {
+              "@id": "https://www.maisonriviere.com/#organization"
+            }
+          },
+          {
+            "@type": "CollectionPage",
+            "@id": "https://www.maisonriviere.com/catalogo#collectionpage",
+            "name": "Catalogo Maison Riviere",
+            "description": "Catalogo de ropa premium de Maison Riviere con sede en Francia.",
+            "url": "https://www.maisonriviere.com/catalogo",
+            "inLanguage": "es",
+            "isPartOf": {
+              "@id": "https://www.maisonriviere.com/#website"
+            },
+            "about": {
+              "@id": "https://www.maisonriviere.com/#organization"
+            }
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Inicio",
+                "item": "https://www.maisonriviere.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Catalogo",
+                "item": "https://www.maisonriviere.com/catalogo"
+              }
+            ]
+          },
+          {
+            "@type": "ItemList",
+            "name": "Productos disponibles",
+            "itemListOrder": "https://schema.org/ItemListUnordered",
+            "numberOfItems": 20,
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                  "@type": "Product",
+                  "name": "Camisa Atelier Blanche",
+                  "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=80"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "item": {
+                  "@type": "Product",
+                  "name": "Pantalon Marais Noir",
+                  "image": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=900&q=80"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "item": {
+                  "@type": "Product",
+                  "name": "Vestido Seine Rose",
+                  "image": "https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=900&q=80"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "item": {
+                  "@type": "Product",
+                  "name": "Sneakers Lumiere",
+                  "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80"
+                }
+              }
+            ]
           }
-        }
+        ]
       }
     </script>
   </head>

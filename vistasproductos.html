@@ -3,6 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO basico -->
+    <title>Chaqueta Vaquera | Maison Riviere</title>
+    <meta
+      name="description"
+      content="Ficha de producto de la Chaqueta Vaquera Maison Riviere: denim premium, talla M y precio competitivo para looks casuales de entretiempo."
+    />
+    <meta
+      name="keywords"
+      content="chaqueta vaquera, denim premium, Maison Riviere, moda francesa, ficha de producto"
+    />
+    <meta name="author" content="Maison Riviere" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0f172a" />
+    <link rel="canonical" href="https://www.maisonriviere.com/producto/chaqueta-vaquera" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="product" />
+    <meta property="og:site_name" content="Maison Riviere" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:title" content="Chaqueta Vaquera | Maison Riviere" />
+    <meta
+      property="og:description"
+      content="Descubre la Chaqueta Vaquera Maison Riviere: corte recto, denim premium y estilo urbano versatil."
+    />
+    <meta property="og:url" content="https://www.maisonriviere.com/producto/chaqueta-vaquera" />
     <title>Maison Riviere | Vista de Productos</title>
 
     <meta
@@ -31,6 +57,13 @@
       property="og:image"
       content="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1200&q=80"
     />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Chaqueta Vaquera | Maison Riviere" />
+    <meta
+      name="twitter:description"
+      content="Corte recto, denim de peso medio y precio de 64,90 EUR para uso diario."
     <meta property="og:image:alt" content="Chaqueta vaquera azul Maison Riviere" />
 
     <meta name="twitter:card" content="summary_large_image" />
@@ -47,6 +80,74 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.maisonriviere.com/#organization",
+            "name": "Maison Riviere",
+            "url": "https://www.maisonriviere.com/"
+          },
+          {
+            "@type": "Product",
+            "@id": "https://www.maisonriviere.com/producto/chaqueta-vaquera#product",
+            "name": "Chaqueta Vaquera",
+            "sku": "DV-2048-AZ",
+            "category": "Chaquetas",
+            "size": "M",
+            "image": [
+              "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1200&q=80"
+            ],
+            "description": "Chaqueta vaquera de corte recto con acabado lavado, confeccionada en 98% algodon y 2% elastano.",
+            "brand": {
+              "@type": "Brand",
+              "name": "Maison Riviere"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "EUR",
+              "price": "64.90",
+              "availability": "https://schema.org/InStock",
+              "url": "https://www.maisonriviere.com/producto/chaqueta-vaquera",
+              "seller": {
+                "@id": "https://www.maisonriviere.com/#organization"
+              }
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.maisonriviere.com/producto/chaqueta-vaquera#webpage",
+            "url": "https://www.maisonriviere.com/producto/chaqueta-vaquera",
+            "name": "Chaqueta Vaquera | Maison Riviere",
+            "inLanguage": "es",
+            "mainEntity": {
+              "@id": "https://www.maisonriviere.com/producto/chaqueta-vaquera#product"
+            },
+            "about": {
+              "@id": "https://www.maisonriviere.com/#organization"
+            }
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Inicio",
+                "item": "https://www.maisonriviere.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Catalogo",
+                "item": "https://www.maisonriviere.com/catalogo"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Chaqueta Vaquera",
+                "item": "https://www.maisonriviere.com/producto/chaqueta-vaquera"
+              }
+            ]
         "@type": "Organization",
         "name": "Maison Riviere",
         "url": "https://maisonriviere.com",
@@ -63,6 +164,7 @@
       }
     </script>
 
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
