@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Core SEO -->
     <title>Formulario de Pagos | Maison Riviere Francia</title>
     <meta
       name="description"
@@ -14,9 +16,14 @@
     />
     <meta name="author" content="Maison Riviere" />
     <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#f8f3ec" />
     <link rel="canonical" href="https://www.maisonriviere.com/formulariodepagos-carlos" />
 
+    <!-- Open Graph -->
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Maison Riviere" />
+    <meta property="og:locale" content="es_ES" />
     <meta property="og:title" content="Formulario de Pagos | Maison Riviere Francia" />
     <meta
       property="og:description"
@@ -27,11 +34,18 @@
       property="og:image"
       content="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=1200&q=80"
     />
+
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@maisonriviere" />
     <meta name="twitter:title" content="Formulario de Pagos | Maison Riviere" />
     <meta
       name="twitter:description"
       content="Checkout en 3 pasos para completar tu compra de moda francesa premium."
+    />
+    <meta
+      name="twitter:image"
+      content="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=1200&q=80"
     />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -67,74 +81,108 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "WebPage",
-        "name": "Formulario de Pagos Maison Riviere",
-        "url": "https://www.maisonriviere.com/formulariodepagos-carlos",
-        "description": "Checkout en 3 pasos para comprar moda francesa de Maison Riviere.",
-        "isPartOf": {
-          "@type": "WebSite",
-          "name": "Maison Riviere",
-          "url": "https://www.maisonriviere.com/"
-        },
-        "about": {
-          "@type": "Organization",
-          "name": "Maison Riviere",
-          "address": {
-            "@type": "PostalAddress",
-            "addressCountry": "FR",
-            "addressLocality": "Paris"
-          }
-        }
-      }
-    </script>
-
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "ItemList",
-        "name": "Catalogo seleccionado",
-        "itemListElement": [
+        "@graph": [
           {
-            "@type": "ListItem",
-            "position": 1,
-            "item": {
-              "@type": "Product",
-              "name": "Chaqueta Beaulieu",
-              "image": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=900&q=80",
-              "offers": {
-                "@type": "Offer",
-                "priceCurrency": "EUR",
-                "price": "189"
-              }
+            "@type": "Organization",
+            "@id": "https://www.maisonriviere.com/#organization",
+            "name": "Maison Riviere",
+            "url": "https://www.maisonriviere.com/",
+            "logo": "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=600&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Paris",
+              "addressCountry": "FR"
+            },
+            "sameAs": ["https://www.instagram.com/maisonriviere"]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.maisonriviere.com/#website",
+            "url": "https://www.maisonriviere.com/",
+            "name": "Maison Riviere",
+            "inLanguage": "es",
+            "publisher": {
+              "@id": "https://www.maisonriviere.com/#organization"
             }
           },
           {
-            "@type": "ListItem",
-            "position": 2,
-            "item": {
-              "@type": "Product",
-              "name": "Pantalon Marais",
-              "image": "https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=900&q=80",
-              "offers": {
-                "@type": "Offer",
-                "priceCurrency": "EUR",
-                "price": "119"
-              }
+            "@type": "WebPage",
+            "@id": "https://www.maisonriviere.com/formulariodepagos-carlos#webpage",
+            "url": "https://www.maisonriviere.com/formulariodepagos-carlos",
+            "name": "Formulario de Pagos | Maison Riviere Francia",
+            "description": "Checkout en 3 pasos para comprar moda francesa de Maison Riviere.",
+            "isPartOf": {
+              "@id": "https://www.maisonriviere.com/#website"
+            },
+            "about": {
+              "@id": "https://www.maisonriviere.com/#organization"
+            },
+            "inLanguage": "es"
+          },
+          {
+            "@type": "CheckoutPage",
+            "@id": "https://www.maisonriviere.com/formulariodepagos-carlos#checkout",
+            "url": "https://www.maisonriviere.com/formulariodepagos-carlos",
+            "name": "Checkout Maison Riviere",
+            "mainEntity": {
+              "@id": "https://www.maisonriviere.com/formulariodepagos-carlos#cart"
+            },
+            "isPartOf": {
+              "@id": "https://www.maisonriviere.com/#website"
             }
           },
           {
-            "@type": "ListItem",
-            "position": 3,
-            "item": {
-              "@type": "Product",
-              "name": "Bolso Rivoli",
-              "image": "https://images.unsplash.com/photo-1614676471928-2ed0ad1061a4?auto=format&fit=crop&w=900&q=80",
-              "offers": {
-                "@type": "Offer",
-                "priceCurrency": "EUR",
-                "price": "159"
+            "@type": "ItemList",
+            "@id": "https://www.maisonriviere.com/formulariodepagos-carlos#cart",
+            "name": "Catalogo seleccionado",
+            "numberOfItems": 3,
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                  "@type": "Product",
+                  "name": "Chaqueta Beaulieu",
+                  "image": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=900&q=80",
+                  "offers": {
+                    "@type": "Offer",
+                    "priceCurrency": "EUR",
+                    "price": "189",
+                    "availability": "https://schema.org/InStock"
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "item": {
+                  "@type": "Product",
+                  "name": "Pantalon Marais",
+                  "image": "https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=900&q=80",
+                  "offers": {
+                    "@type": "Offer",
+                    "priceCurrency": "EUR",
+                    "price": "119",
+                    "availability": "https://schema.org/InStock"
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "item": {
+                  "@type": "Product",
+                  "name": "Bolso Rivoli",
+                  "image": "https://images.unsplash.com/photo-1614676471928-2ed0ad1061a4?auto=format&fit=crop&w=900&q=80",
+                  "offers": {
+                    "@type": "Offer",
+                    "priceCurrency": "EUR",
+                    "price": "159",
+                    "availability": "https://schema.org/InStock"
+                  }
+                }
               }
-            }
+            ]
           }
         ]
       }
